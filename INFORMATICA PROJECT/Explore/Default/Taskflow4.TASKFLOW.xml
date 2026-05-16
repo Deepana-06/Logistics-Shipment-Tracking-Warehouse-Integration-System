@@ -1,0 +1,77 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>lu6zqzm5Y6tMFyg-gt-1853072-2026-05-15T13:54:55.182Z::tf.xml</types1:EntryId>
+      <types1:Name>Taskflow4</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>927622bad006@mkce.ac.in</types1:CreatedBy>
+      <types1:CreationDate>2026-05-15T13:54:55Z</types1:CreationDate>
+      <types1:ModifiedBy>927622bad006@mkce.ac.in</types1:ModifiedBy>
+      <types1:ModificationDate>2026-05-15T13:55:25Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>927622bad006@mkce.ac.in</types1:PublishedBy>
+      <types1:PublicationDate>2026-05-15T13:55:39Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Taskflow4/Taskflow4.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   GUID="hzI31Xmd3IJfhFLBUdWfg3"
+                   displayName="Taskflow4"
+                   name="Taskflow4"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="mp6zak19" targetId="mp6zak1m"/>
+               </start>
+               <eventContainer id="mp6zak1m">
+                  <service id="mp6zak17">
+                     <title>Notification Task 1</title>
+                     <serviceName>emailNotificationService</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Email To" source="constant">2005deepana@gmail.com</parameter>
+                        <parameter name="Email Cc" source="constant"/>
+                        <parameter name="Email Bcc" source="constant"/>
+                        <parameter name="Email Subject" source="constant"/>
+                        <parameter name="Email Content Type" source="constant">text</parameter>
+                        <parameter name="Email Body" source="constant"/>
+                     </serviceInput>
+                     <serviceOutput/>
+                  </service>
+                  <link id="mp6zak1a" targetId="c"/>
+                  <events>
+                     <catch faultField="temp.dummyTF5895/fault"
+                            id="mp6zak14"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <end id="c"/>
+            </flow>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>hzI31Xmd3IJfhFLBUdWfg3</types1:GUID>
+      <types1:DisplayName>Taskflow4</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-05-16T04:11:18.782Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

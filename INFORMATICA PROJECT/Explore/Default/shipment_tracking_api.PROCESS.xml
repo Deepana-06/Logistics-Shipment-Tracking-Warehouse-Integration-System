@@ -1,0 +1,91 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>7O2htghGZ5i4rsw-gt-4926759-2026-05-15T14:24:41.936Z::pd.xml</types1:EntryId>
+      <types1:Name>shipment_tracking_api</types1:Name>
+      <types1:MimeType>application/xml+process</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>927622bad006@mkce.ac.in</types1:CreatedBy>
+      <types1:CreationDate>2026-05-15T14:24:42Z</types1:CreationDate>
+      <types1:ModifiedBy>927622bad006@mkce.ac.in</types1:ModifiedBy>
+      <types1:ModificationDate>2026-05-15T14:29:30Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>927622bad006@mkce.ac.in</types1:PublishedBy>
+      <types1:PublicationDate>2026-05-15T14:29:34Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/spi.shipment_tracking_api/shipment_tracking_api.pd.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <process xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                  xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                  xmlns:list="urn:activevos:spi:list:functions"
+                  GUID="ayOHUBfBz2igQqPXFXUW2s"
+                  displayName="shipment_tracking_api"
+                  name="shipment_tracking_api"
+                  overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <input>
+               <parameter description="" name="shipment_id" required="false" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </parameter>
+            </input>
+            <output>
+               <field description="" name="tracking_location" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="shipment_status" type="string">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+               <field description="" name="shipment" type="int">
+                  <options>
+                     <option name="required">false</option>
+                  </options>
+               </field>
+            </output>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="none">
+               <rest>
+                  <allowAnonymousAccess/>
+               </rest>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">true</nvpair>
+            </extData>
+            <flow id="dbe64a4b1-33ae-4fb9-ae24-cdb33c61e64b">
+               <start id="j450d100e-78c9-4d59-b74c-d4d4023c08fc">
+                  <link id="i5a297745-d843-436e-87d4-3d5265907e0d"
+                        targetId="Assignment440ecad4-bab1-4b2d-ae92-7b953a8b9393"/>
+               </start>
+               <assignment id="Assignment440ecad4-bab1-4b2d-ae92-7b953a8b9393">
+                  <title>Assignment to shipment_status, tracking_location, etc,</title>
+                  <operation source="constant" to="output.shipment_status">DELIVERD</operation>
+                  <operation source="constant" to="output.tracking_location">CHENNAI</operation>
+                  <operation source="constant" to="output.shipment">101</operation>
+                  <link id="t0bad64c4-d377-4eb4-a407-27c4d8f77855"
+                        targetId="end-u528a279f-5c1d-4f6e-81c6-cf71212e581a"/>
+               </assignment>
+               <end id="end-u528a279f-5c1d-4f6e-81c6-cf71212e581a">
+                  <title>End</title>
+               </end>
+            </flow>
+         </process>
+      </types1:Entry>
+      <types1:GUID>ayOHUBfBz2igQqPXFXUW2s</types1:GUID>
+      <types1:DisplayName>shipment_tracking_api</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-05-16T04:11:18.851Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>

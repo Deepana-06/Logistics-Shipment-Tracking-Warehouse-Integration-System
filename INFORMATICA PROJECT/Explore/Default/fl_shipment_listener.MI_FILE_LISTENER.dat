@@ -1,0 +1,58 @@
+{
+  "orgId" : "3rKU8z9kgbIfJPgzM9mRss",
+  "icsGuid" : "3Q9bYlv4lDFfT0YnLO0P0A",
+  "name" : "fl_shipment_listener",
+  "id" : 32290,
+  "type" : "FILE",
+  "description" : "",
+  "status" : "ENABLE",
+  "agentGroup" : "01DMX125000000000002",
+  "connection" : {
+    "type" : "local",
+    "name" : "",
+    "displayName" : null,
+    "connId" : ""
+  },
+  "rules" : [ {
+    "id" : 87279,
+    "folderPath" : "C:\\Users\\deepu\\Downloads\\IICS\\input",
+    "filePattern" : "shipment*.csv",
+    "postAction" : "NONE",
+    "patternType" : "wildcard",
+    "recursive" : true,
+    "mandatory" : false
+  } ],
+  "eventListenerRules" : null,
+  "triggerDefinition" : {
+    "type" : "DAILY_WITH_INTERVAL",
+    "timezone" : "America/Los_Angeles",
+    "startDate" : "20260515",
+    "endDate" : "20260515",
+    "runIndefinitely" : false,
+    "startsAt" : "0000",
+    "endsAt" : "2355",
+    "frequency" : 15,
+    "frequencyUnit" : "SECONDS",
+    "daysToRun" : null,
+    "monthlyMode" : null,
+    "dayOfMonth" : null,
+    "weekOfMonth" : null,
+    "dayOfWeek" : null
+  },
+  "stopWhenRulesMet" : false,
+  "fileStabilityType" : "SECONDARY_SNAPSHOT",
+  "stabilityCheckInterval" : 10,
+  "notifyExistingFiles" : false,
+  "lastModified" : 1778849026000,
+  "job" : "",
+  "schedule" : "",
+  "listenerEvents" : {
+    "arrive" : true,
+    "update" : false,
+    "delete" : false
+  },
+  "emailIds" : "2005deepana@gmail.com",
+  "continueOnError" : true,
+  "filesInScheduleInterval" : false,
+  "identifier" : "32290"
+}

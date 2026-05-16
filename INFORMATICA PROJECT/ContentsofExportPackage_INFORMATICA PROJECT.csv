@@ -1,0 +1,27 @@
+objectPath,objectName,objectType,id
+/SYS,logistics_flatfile,Connection,coPeaiezcGRdGEAdKZf6uJ
+/Explore/Default,Taskflow4,TASKFLOW,hzI31Xmd3IJfhFLBUdWfg3
+/Explore,Default,Project,9uxcvmOFhSdgPzgLNbAg0J
+/SYS,ORACLE_LOG_TGT,Connection,kp7ZlSmaoMvh7hJY5FOO8K
+/Explore/Default,Mapping2,DTEMPLATE,gQ6LYCRhb0Ti08z8FJXgof
+/Explore/Default,m_oracle_to_snowflake,DTEMPLATE,czX330hcjOrfGs1aGmpsmr
+/SYS,ORACLE_LOGISTICS,Connection,7kqairDHXfkfOhQmfiWuyS
+/Explore/Default,MY_AP_PROCESS,PROCESS,byMPVIG2eCsdb2D2g3lxas
+/Explore/Default,Hierarchical Schema_JSON_FILE,HSCHEMA,7TBbggBKj2dhxGsnVejfqZ
+/Explore/Default,m_tracking_event,DTEMPLATE,8puoYMoLLFSkVaZ41mHHgr
+/Explore/Default,MappingTask2,MTT,7nlezi8zcubkQp9T6L0W2q
+/Explore/Default,shipment_tracking_api,PROCESS,ayOHUBfBz2igQqPXFXUW2s
+/Explore/Default,Taskflow1,TASKFLOW,1RluZR0FXdhenrMXhKi5CX
+/SYS,DESKTOP-CL4OR4B,AgentGroup,lXYO2d3jJG5lJPhNKpOAaj
+/Explore/Default,m_warehouse_validation,DTEMPLATE,al6zyyo0T6YiaGGMICBgOZ
+/Explore/Default,m_rank_warehouse,DTEMPLATE,3veGGp8pcEsckcc3u6gvEa
+/Explore/Default,Taskflow2,TASKFLOW,aTxblEvScN0fvnjnWWURCo
+/SYS,SNOWFLAKE_TARGET,Connection,01QT1qquL9GkSXbD2Orxum
+/Explore/Default,fl_shipment_listener,MI_FILE_LISTENER,3Q9bYlv4lDFfT0YnLO0P0A
+/Explore/Default,Taskflow3,TASKFLOW,cGuh1vxKqeAcc9vnWwlvcf
+/Explore/Default,MappingTask1,MTT,adMbXSzRaUYkNNMBISDMmt
+/Explore/Default,Taskflow4(Parallel),TASKFLOW,0SesFNR2bIUeXkyJ3EvB8v
+/Explore/Default,m_shipment_aggregator,DTEMPLATE,4t8tlS2j3AKgDPzleopyU3
+/Explore/Default,m_warehouse_load,DTEMPLATE,1oCBnB2GOr4ef1IabFb50f
+/SYS,SNOWFLAKE_SOURCE,Connection,6UEUbIbYGKqfSrMTpE6Rcl
+/Explore/Default,WAREHOUSE_MAPPING,DTEMPLATE,ePBYPj8vko3d2LD7gQoxKe
